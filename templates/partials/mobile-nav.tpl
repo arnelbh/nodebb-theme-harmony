@@ -6,6 +6,7 @@
 				<img component="brand/logo" alt="{{{ if brand:logo:alt }}}{brand:logo:alt}{{{ else }}}[[global:header.brand-logo]]{{{ end }}}" class="{brand:logo:display}" src="{brand:logo}?{config.cache-buster}" height="40" />
 			</a>
 			{{{ end }}}
+			<!-- IMPORT partials/topic/mobile-title.tpl -->
 		{{{ else }}}
 		<div>
 			<a href="#" role="button" class="nav-link d-flex justify-content-between align-items-center position-relative" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

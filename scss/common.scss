@@ -130,3 +130,32 @@ body:not(.page-user) {
 .post-queue.posts-list .post-content {
 	a { text-decoration: underline;}
 }
+
+
+#mobileTopicTitle .topic-container {
+	display: flex;
+	width: 100%;
+	align-items: left;
+}
+
+#mobileTopicTitle .topic-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%; /* or set a fixed height like 50px if needed */
+}
+
+.topic-container .topic-label {
+	flex: 0 0 70%;
+	display: flex;
+	align-items: left;
+	font-size: 1rem;
+	overflow: hidden;
+}
+
+.topic-container .topic-tag {
+	flex: 0 0 30%;
+	display: flex;
+	align-items: left;
+	font-size: 0.65rem;
+	overflow: hidden;
+}
