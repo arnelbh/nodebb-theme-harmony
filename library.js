@@ -20,6 +20,7 @@ const defaults = {
 	autohideBottombar: 'on',
 	openSidebars: 'off',
 	chatModals: 'off',
+	topicInfoInMobilebar: 'on'
 };
 
 library.init = async function (params) {
@@ -154,6 +155,7 @@ library.loadThemeConfig = async function (uid) {
 	config.topMobilebar = config.topMobilebar === 'on';
 	config.openSidebars = config.openSidebars === 'on';
 	config.chatModals = config.chatModals === 'on';
+	config.topicInfoInMobilebar = config.topicInfoInMobilebar === 'on';
 	return config;
 };
 

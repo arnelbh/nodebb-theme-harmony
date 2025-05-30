@@ -77,6 +77,13 @@
 		</label>
 	</div>
 
+	<div class="form-check form-switch mb-3">
+		<input class="form-check-input" type="checkbox" role="switch" id="topicInfoInMobilebar" name="topicInfoInMobilebar" {{{ if theme.topicInfoInMobilebar }}}checked{{{ end }}}>
+		<label class="form-check-label" for="topicInfoInMobilebar">
+			[[themes/harmony:settings.topicInfoInMobilebar]]
+		</label>
+	</div>
+
 </form>
 
 <!-- IMPORT partials/account/footer.tpl -->

@@ -64,6 +64,12 @@
 						[[themes/harmony:settings.chatModals]]
 					</div>
 				</div>
+				<div class="form-check form-switch">
+					<input type="checkbox" class="form-check-input" id="topicInfoInMobilebar" name="topicInfoInMobilebar" />
+					<div for="topicInfoInMobilebar" class="form-check-label">
+						[[themes/harmony:settings.topicInfoInMobilebar]]
+					</div>
+				</div>
 			</form>
 		</div>
 
