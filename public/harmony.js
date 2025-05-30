@@ -10,6 +10,7 @@ $(document).ready(function () {
 	setupNavTooltips();
 	fixPlaceholders();
 	fixSidebarOverflow();
+	hideBrandWrapper();
 
 	function setupSkinSwitcher() {
 		$('[component="skinSwitcher"]').on('click', '.dropdown-item', function () {
@@ -295,4 +296,20 @@ $(document).ready(function () {
 		mainNavEl.on('shown.bs.dropdown', toggleOverflow)
 			.on('hidden.bs.dropdown', toggleOverflow);
 	}
+
+	function hideBrandWrapper() {
+		const brandDiv = $('[component="brand/wrapper"]');  
+		const bottomBar = $('[component="bottombar"]');
+
+		function isMobilebarVisible() {
+			return bottomBar.length > 0 && bottomBar.is(':visible');
+		}
+
+		if (config.theme.topicInfoInMobilebar && isMobilebarVisible()) {
+			brandDiv.addClass('hidden'); // Hide brandDiv if mobile bar is visible
+		} else {
+			brandDiv.removeClass('hidden'); // Show brandDiv if mobile bar is not visible
+		}
+	}
+
 });
