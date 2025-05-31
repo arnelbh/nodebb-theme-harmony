@@ -15,7 +15,8 @@
 			</a>
 			{{{ end }}}
 		</div>
-		
+		{{{ end }}}
+
 		{{{ if widgets.brand-header.length }}}
 		<div data-widget-area="brand-header" class="flex-fill gap-3 p-2 align-self-center">
 			{{{each widgets.brand-header}}}

@@ -159,3 +159,18 @@ body:not(.page-user) {
 	font-size: 0.65rem;
 	overflow: hidden;
 }
+
+
+@media (min-width: 992px) {
+    div:has(> div > [component="post/header"]) {
+        position: sticky;
+        top: 0rem;
+        background-color: white;
+        z-index: 3;
+        padding: 0.25rem 0;
+    }
+}
+
+.sticky-top[style="top:2rem; z-index:1;"] {
+    top: 9rem !important;
+}
